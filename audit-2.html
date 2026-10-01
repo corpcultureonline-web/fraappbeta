@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0eb">
+  <title>Your numbers | Franchise Readiness Audit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="audit.css">
+  <script src="audit.js" defer></script>
+</head>
+<body>
+  <header class="audit-header">
+    <a class="brand" href="index.html" aria-label="Corporate Culture home"><img src="assets/logo-colour.png" alt="Corporate Culture"></a>
+    <span class="audit-title">Franchise Readiness Audit</span>
+  </header>
+
+  <div class="audit-layout">
+    <aside class="audit-aside" aria-label="Audit progress">
+      <div class="progress-head">
+        <p class="progress-section">Section 2 of 7<span class="section-name"> · Your numbers</span></p>
+      </div>
+      <ol class="progress-bar" aria-hidden="true">
+        <li class="is-done">1</li><li class="is-current">2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+      </ol>
+      <ol class="step-list">
+        <li class="is-done"><a class="step-item" href="audit-1.html"><span class="step-num"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>About your business</a></li>
+        <li class="is-current"><a class="step-item" href="audit-2.html" aria-current="step"><span class="step-num">2</span>Your numbers</a></li>
+        <li><a class="step-item" href="audit-3.html"><span class="step-num">3</span>Your systems</a></li>
+        <li><a class="step-item" href="audit-4.html"><span class="step-num">4</span>Market and brand</a></li>
+        <li><a class="step-item" href="audit-5.html"><span class="step-num">5</span>Partners and support</a></li>
+        <li><a class="step-item" href="audit-6.html"><span class="step-num">6</span>Your role</a></li>
+        <li><a class="step-item" href="audit-7.html"><span class="step-num">7</span>Legal position</a></li>
+      </ol>
+      <p class="saved-note"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your answers are saved as you go</p>
+    </aside>
+
+    <main class="audit-main">
+      <h1>Your numbers</h1>
+      <p class="audit-intro">Your best estimate is fine — pick the closest band.</p>
+
+      <form class="audit-form" id="audit-form" data-step="2" data-next="audit-3.html" novalidate>
+        <div class="question-list">
+          <fieldset class="question-card">
+            <legend>What is the typical payback period for one of your own outlets?</legend>
+            <div class="options">
+              <div class="option"><input type="radio" id="payback-1" name="payback" value="36+" required><label for="payback-1">More than 36 months<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="payback-2" name="payback" value="24-36"><label for="payback-2">24–36 months<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="payback-3" name="payback" value="18-24"><label for="payback-3">18–24 months<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="payback-4" name="payback" value="12-18" checked><label for="payback-4">12–18 months<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="payback-5" name="payback" value="0-12"><label for="payback-5">Less than 12 months<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+            </div>
+            <p class="field-error" id="payback-error"></p>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>What is your outlet-level operating margin?</legend>
+            <div class="options">
+              <div class="option"><input type="radio" id="margin-1" name="margin" value="0-10" required><label for="margin-1">Less than 10%<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="margin-2" name="margin" value="10-15"><label for="margin-2">10–15%<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="margin-3" name="margin" value="15-20" checked><label for="margin-3">15–20%<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="margin-4" name="margin" value="20-25"><label for="margin-4">20–25%<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="margin-5" name="margin" value="25+"><label for="margin-5">More than 25%<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+            </div>
+            <p class="field-error" id="margin-error"></p>
+          </fieldset>
+        </div>
+
+        <div class="audit-actions">
+          <p class="actions-status" aria-live="polite"></p>
+          <a class="btn btn-back" href="audit-1.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</a>
+          <button class="btn btn-continue" type="submit">Continue<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="saved-note actions-saved"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your answers are saved as you go</p>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

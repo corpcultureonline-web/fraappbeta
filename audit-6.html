@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0eb">
+  <title>Your role | Franchise Readiness Audit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="audit.css">
+  <script src="audit.js" defer></script>
+</head>
+<body>
+  <header class="audit-header">
+    <a class="brand" href="index.html" aria-label="Corporate Culture home"><img src="assets/logo-colour.png" alt="Corporate Culture"></a>
+    <span class="audit-title">Franchise Readiness Audit</span>
+  </header>
+
+  <div class="audit-layout">
+    <aside class="audit-aside" aria-label="Audit progress">
+      <div class="progress-head">
+        <p class="progress-section">Section 6 of 7<span class="section-name"> · Your role</span></p>
+      </div>
+      <ol class="progress-bar" aria-hidden="true">
+        <li class="is-done">1</li><li class="is-done">2</li><li class="is-done">3</li><li class="is-done">4</li><li class="is-done">5</li><li class="is-current">6</li><li>7</li>
+      </ol>
+      <ol class="step-list">
+        <li class="is-done"><a class="step-item" href="audit-1.html"><span class="step-num"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>About your business</a></li>
+        <li class="is-done"><a class="step-item" href="audit-2.html"><span class="step-num"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Your numbers</a></li>
+        <li class="is-done"><a class="step-item" href="audit-3.html"><span class="step-num"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Your systems</a></li>
+        <li class="is-done"><a class="step-item" href="audit-4.html"><span class="step-num"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Market and brand</a></li>
+        <li class="is-done"><a class="step-item" href="audit-5.html"><span class="step-num"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Partners and support</a></li>
+        <li class="is-current"><a class="step-item" href="audit-6.html" aria-current="step"><span class="step-num">6</span>Your role</a></li>
+        <li><a class="step-item" href="audit-7.html"><span class="step-num">7</span>Legal position</a></li>
+      </ol>
+      <p class="saved-note"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your answers are saved as you go</p>
+    </aside>
+
+    <main class="audit-main">
+      <h1>Your role</h1>
+      <p class="audit-intro">One question. Pick the sentence closest to how things run today, not how you would like them to.</p>
+
+      <form class="audit-form" id="audit-form" data-step="6" data-next="audit-7.html" novalidate>
+        <div class="question-list">
+          <fieldset class="question-plain">
+            <legend>How much decision-making authority sits with your team rather than with you?</legend>
+            <div class="options options-large">
+              <div class="option"><input type="radio" id="authority-1" name="authority" value="1" required><label for="authority-1">I am involved in most daily decisions. If I am away for a week, things slow down or wait for me.<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="authority-2" name="authority" value="2"><label for="authority-2">My team handles routine tasks, but decisions — purchasing, staffing, customer issues — still come to me.<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="authority-3" name="authority" value="3" checked><label for="authority-3">A manager runs the day-to-day within limits I have set. I am consulted on anything outside those limits.<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="authority-4" name="authority" value="4"><label for="authority-4">Managers make operational decisions independently. I review outcomes weekly or monthly rather than approving in advance.<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+              <div class="option"><input type="radio" id="authority-5" name="authority" value="5"><label for="authority-5">The business operates without my involvement in daily decisions. My role is direction and growth, not operations.<span class="option-mark"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></label></div>
+            </div>
+            <p class="field-error" id="authority-error"></p>
+          </fieldset>
+        </div>
+
+        <div class="audit-actions">
+          <p class="actions-status" aria-live="polite"></p>
+          <a class="btn btn-back" href="audit-5.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</a>
+          <button class="btn btn-continue" type="submit">Continue<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="saved-note actions-saved"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 6.5 2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your answers are saved as you go</p>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

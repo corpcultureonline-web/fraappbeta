@@ -8,114 +8,259 @@
   <title>Franchise Readiness Audit | Corporate Culture</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Corporate Culture home"><img src="assets/logo-colour.png" alt="Corporate Culture"></a>
-    <a class="header-link" href="#how-it-works">How it works <span aria-hidden="true">↘</span></a>
-  </header>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="mini-store" viewBox="0 0 50 50">
+        <rect x="2" y="4" width="46" height="6" fill="#231f20"/>
+        <path d="M2 10h11.5v5a5.75 5.75 0 0 1-11.5 0z" fill="#f78f1e"/><path d="M13.5 10H25v5a5.75 5.75 0 0 1-11.5 0z" fill="#ef4423"/>
+        <path d="M25 10h11.5v5a5.75 5.75 0 0 1-11.5 0z" fill="#f78f1e"/><path d="M36.5 10H48v5a5.75 5.75 0 0 1-11.5 0z" fill="#ef4423"/>
+        <rect x="6" y="26" width="17" height="11" fill="#fff" stroke="#231f20" stroke-width="1.5"/>
+        <rect x="32" y="24" width="10" height="20" fill="#231f20"/>
+        <path d="M0 45h50" stroke="#231f20" stroke-width="1.5"/>
+      </symbol>
+      <symbol id="ghost-store" viewBox="0 0 50 50">
+        <path d="M5 8h40v4H5zM5 12c2 6 7 6 8 0 1 6 7 6 8 0 1 6 7 6 8 0 1 6 7 6 8 0 1 6 6 6 8 0" fill="none" stroke="#c96a4a" stroke-width="1.4"/>
+        <path d="M5 12v30h40V12" fill="none" stroke="#c96a4a" stroke-width="1.4"/>
+        <rect x="10" y="24" width="15" height="10" fill="none" stroke="#c96a4a" stroke-width="1.4"/>
+        <path d="M32 42V26h8v16" fill="none" stroke="#c96a4a" stroke-width="1.4"/>
+      </symbol>
+    </defs>
+  </svg>
 
   <main>
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Franchise Readiness Audit</p>
-        <h1>Is your business ready to <span>franchise?</span></h1>
-        <p class="hero-intro">Eleven questions. About four minutes. Free, with no signup.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="audit-1.html">Start the audit <span aria-hidden="true">→</span></a>
-          <a class="text-link" href="#sample-report">See a sample report</a>
+    <section class="hero" id="top">
+      <div class="section-shell">
+        <a class="brand" href="#top" aria-label="Corporate Culture home"><img src="assets/logo-colour.png" alt="Corporate Culture"></a>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Is your business <br>ready to <span>franchise?</span></h1>
+            <p class="hero-intro">11 questions. About 4 minutes. Free, with no signup.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="audit-1.html">Start the audit <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a class="text-link" href="#sample-report">See a sample report</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <svg viewBox="-10 30 440 360" class="network">
+              <circle cx="211" cy="211" r="211" fill="#efe5d8"/>
+              <g class="links" fill="none" stroke="#c0543a" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round">
+                <path d="M112 129 179 189"/><path d="M311 121 241 189"/><path d="M91 275 124 279"/><path d="M330 275 298 279"/>
+              </g>
+              <g class="float float-a"><rect x="39" y="55" width="73" height="74" rx="7" fill="#fff"/><use href="#mini-store" x="51" y="67" width="50" height="50"/></g>
+              <g class="float float-b"><rect x="309" y="47" width="74" height="74" rx="7" fill="#fff"/><use href="#mini-store" x="321" y="59" width="50" height="50"/></g>
+              <g class="ghost ghost-a"><rect x="16" y="233" width="75" height="74" rx="6" fill="none" stroke="#c96a4a" stroke-width="1.4" stroke-dasharray="3 3"/><use href="#ghost-store" x="28" y="245" width="50" height="50"/></g>
+              <g class="ghost ghost-b"><rect x="330" y="233" width="75" height="74" rx="6" fill="none" stroke="#c96a4a" stroke-width="1.4" stroke-dasharray="3 3"/><use href="#ghost-store" x="342" y="245" width="50" height="50"/></g>
+              <g class="flagship">
+                <rect x="126" y="191" width="170" height="29" rx="3" fill="#231f20"/>
+                <rect x="177" y="201" width="68" height="8" rx="4" fill="#f78f1e"/>
+                <g>
+                  <path d="M126 220h21.25v24a10.6 10.6 0 0 1-21.25 0z" fill="#f78f1e"/><path d="M147.25 220h21.25v24a10.6 10.6 0 0 1-21.25 0z" fill="#ef4423"/>
+                  <path d="M168.5 220h21.25v24a10.6 10.6 0 0 1-21.25 0z" fill="#f78f1e"/><path d="M189.75 220H211v24a10.6 10.6 0 0 1-21.25 0z" fill="#ef4423"/>
+                  <path d="M211 220h21.25v24a10.6 10.6 0 0 1-21.25 0z" fill="#f78f1e"/><path d="M232.25 220h21.25v24a10.6 10.6 0 0 1-21.25 0z" fill="#ef4423"/>
+                  <path d="M253.5 220h21.25v24a10.6 10.6 0 0 1-21.25 0z" fill="#f78f1e"/><path d="M274.75 220H296v24a10.6 10.6 0 0 1-21.25 0z" fill="#ef4423"/>
+                </g>
+                <path d="M126 255h170v84H126z" fill="#fff"/>
+                <rect x="140" y="266" width="81" height="57" fill="#fdf1e3" stroke="#231f20" stroke-width="2.5"/>
+                <path d="M180.5 266v57" stroke="#231f20" stroke-width="2.5"/>
+                <rect x="235" y="263" width="47" height="76" fill="#231f20"/>
+                <circle cx="272" cy="304" r="3" fill="#f78f1e"/>
+                <path d="M104 339.5h212" stroke="#231f20" stroke-width="2.5"/>
+              </g>
+            </svg>
+          </div>
         </div>
-        <p class="hero-note"><span class="status-dot"></span> A clearer next step starts here</p>
-      </div>
-      <div class="hero-visual reveal" aria-label="Illustrative franchise network">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="network-label label-top">A repeatable model</div>
-        <div class="store store-one"><span class="store-awning"></span><span class="store-window"></span></div>
-        <div class="store store-two"><span class="store-awning"></span><span class="store-window"></span></div>
-        <div class="store store-three"><span class="store-awning"></span><span class="store-window"></span></div>
-        <div class="store store-main"><span class="store-awning"></span><span class="store-window"></span><span class="store-door"></span></div>
-        <div class="network-label label-bottom">Your flagship</div>
       </div>
     </section>
 
     <section class="results section-shell" id="what-you-get">
-      <div class="section-heading reveal">
-        <p class="eyebrow">What you get</p>
-        <h2>A clear picture of where you stand.</h2>
-        <p>Your answers become a one-page snapshot of the areas that shape a strong franchise.</p>
+      <div class="split-heading reveal">
+        <div>
+          <p class="eyebrow">What you get</p>
+          <h2>A clear picture of where you stand.</h2>
+        </div>
+        <p>Your answers turn into a one-page snapshot. Here is what a founder receives.</p>
       </div>
+
       <div class="report reveal">
         <div class="report-top"><span>Franchise readiness snapshot</span><span class="sample-tag">Illustrative example</span></div>
         <div class="report-content">
           <aside class="score-panel">
             <p class="small-label">Readiness range</p>
-            <strong class="score">54–71</strong>
+            <strong class="score">54 – 71</strong>
             <div class="score-track" role="img" aria-label="Readiness range from 54 to 71 out of 100"><span></span></div>
             <div class="score-ends"><span>Not ready</span><span>Ready to scale</span></div>
-            <p class="muted">Always a range. Eleven answers place you closely, not exactly.</p>
-            <div class="weak-card"><p class="small-label">Weakest area</p><h3>Market Proof</h3><p>Every sale comes from one city. There is no proof yet that the model works where people do not already know you.</p></div>
+            <p class="muted">Always a range. 11 answers place you closely, not exactly.</p>
+            <div class="weak-card"><p class="mono-label">Weakest area</p><h3>Market Proof</h3><p>Every sale so far comes from one city. There is no proof yet that the model works where people don’t already know you.</p></div>
           </aside>
           <div class="areas-list" aria-label="Example assessment areas">
-            <div class="area-row"><div><strong>Profit &amp; Payback</strong><span>Will a franchise owner make money?</span></div><b class="badge average">Average</b></div>
-            <div class="area-row"><div><strong>Systems</strong><span>Can someone else run it like you do?</span></div><b class="badge good">Good</b></div>
-            <div class="area-row"><div><strong>Support</strong><span>Can you help an owner after they join?</span></div><b class="badge good">Good</b></div>
-            <div class="area-row"><div><strong>Your Role</strong><span>Does the business run without you?</span></div><b class="badge weak">Weak</b></div>
-            <div class="area-row area-highlight"><div><strong>Market Proof <i>Weakest</i></strong><span>Does it work outside your home city?</span></div><b class="badge weak">Weak</b></div>
-            <div class="area-row"><div><strong>Brand Pull</strong><span>Do people come asking for your franchise?</span></div><b class="badge weak">Weak</b></div>
-            <div class="area-row"><div><strong>Right Partner</strong><span>Do you know who should run your next outlet?</span></div><b class="badge average">Average</b></div>
+            <div class="area-row"><div><strong>Profit &amp; Payback</strong><span>Will a franchise owner make money?</span></div><b class="badge average">− Average</b></div>
+            <div class="area-row"><div><strong>Systems</strong><span>Can someone else run it like you do?</span></div><b class="badge good">✓ Good</b></div>
+            <div class="area-row"><div><strong>Support</strong><span>Can you help an owner after they join?</span></div><b class="badge good">✓ Good</b></div>
+            <div class="area-row"><div><strong>Your Role</strong><span>Does the business run without you?</span></div><b class="badge weak">! Weak</b></div>
+            <div class="area-row area-highlight"><div><strong>Market Proof <i>Weakest</i></strong><span>Does it work outside your home city?</span></div><b class="badge weak">! Weak</b></div>
+            <div class="area-row"><div><strong>Brand Pull</strong><span>Do people come asking for your franchise?</span></div><b class="badge weak">! Weak</b></div>
+            <div class="area-row"><div><strong>Right Partner</strong><span>Do you know who should run your next outlet?</span></div><b class="badge good">✓ Good</b></div>
           </div>
         </div>
-        <div class="legal-check"><strong>Legal check</strong><span>Trademark: filed, not yet registered</span><span>Disputes: none declared</span></div>
+        <div class="legal-check">
+          <p class="legal-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Legal check</p>
+          <ul>
+            <li><span class="legal-mark pending" aria-hidden="true">−</span>Trademark: filed, not yet registered</li>
+            <li><span class="legal-mark ok" aria-hidden="true">✓</span>Disputes: none declared</li>
+          </ul>
+        </div>
       </div>
-      <p class="report-caption reveal">A sample result for an illustrative business. Your own result reflects your answers.</p>
+      <p class="report-caption reveal">This is a sample result for a business that does not exist. Your own result will look like this, with your answers.</p>
+
+      <ul class="feature-row reveal">
+        <li>Where you stand across the 7 areas that decide a franchise</li>
+        <li>Your weakest area named, with what it costs</li>
+        <li>A legal check — trademark and disputes</li>
+        <li>Things you can act on yourself, straight away</li>
+      </ul>
     </section>
 
     <section class="sample-band" id="sample-report">
       <div class="sample-inner section-shell reveal">
-        <div class="document-art" aria-hidden="true"><div class="doc-head"></div><i></i><i></i><i></i><i></i><div class="doc-footer"></div></div>
-        <div class="sample-copy"><p class="eyebrow">Sample report</p><h2>Know what you’ll receive before you begin.</h2><p>Explore a completed Franchise Readiness Audit report. Four pages, just as the founder received it.</p></div>
-        <a class="button button-outline" href="#start">View sample report <span aria-hidden="true">↗</span></a>
+        <svg class="document-art" viewBox="0 0 124 164" aria-hidden="true">
+          <rect x="10" y="10" width="112" height="152" rx="3" fill="#f0e6d8"/>
+          <rect x="2" y="2" width="112" height="152" rx="3" fill="#fff" stroke="#e3d9cf"/>
+          <path d="M2 5a3 3 0 0 1 3-3h106a3 3 0 0 1 3 3v6H2z" fill="#ef4423"/>
+          <rect x="14" y="22" width="56" height="4" rx="1" fill="#231f20"/><rect x="14" y="31" width="32" height="3" rx="1" fill="#bdb3ab"/>
+          <rect x="14" y="42" width="88" height="5" rx="2" fill="#f0e6d8"/><rect x="54" y="42" width="16" height="5" rx="2" fill="#ef4423"/>
+          <rect x="14" y="57" width="58" height="3" rx="1" fill="#bdb3ab"/><rect x="88" y="56" width="14" height="5" rx="2" fill="#fbe3dc"/>
+          <rect x="14" y="68" width="50" height="3" rx="1" fill="#bdb3ab"/><rect x="88" y="67" width="14" height="5" rx="2" fill="#fcefd2"/>
+          <rect x="14" y="79" width="62" height="3" rx="1" fill="#bdb3ab"/><rect x="88" y="78" width="14" height="5" rx="2" fill="#e3f1e6"/>
+          <rect x="14" y="90" width="44" height="3" rx="1" fill="#bdb3ab"/><rect x="88" y="89" width="14" height="5" rx="2" fill="#fcefd2"/>
+          <rect x="14" y="104" width="88" height="18" rx="3" fill="#fdeedf"/>
+          <text x="92" y="146" font-family="DM Sans, sans-serif" font-size="7" fill="#ef4423">PDF</text>
+        </svg>
+        <div class="sample-copy">
+          <p class="eyebrow">Sample report</p>
+          <h2>Read a completed sample audit before you start.</h2>
+          <p>A full result for a fictional business, every page as a founder receives it. 4 pages, PDF.</p>
+        </div>
+        <div class="sample-action">
+          <a class="button button-outline" href="assets/sample-report.pdf" target="_blank" rel="noopener">Open the sample report <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p>Opens straight away in a new tab.<br>No email, no form, nothing to sign up for.</p>
+        </div>
       </div>
     </section>
 
     <section class="steps section-shell" id="how-it-works">
-      <div class="section-heading reveal"><p class="eyebrow">How it works</p><h2>Three steps. Nothing to prepare.</h2></div>
+      <div class="section-heading reveal"><p class="eyebrow">How it works</p><h2>3 steps. Nothing to prepare.</h2></div>
       <ol class="step-grid">
-        <li class="step-card reveal"><span class="step-number">01</span><h3>Answer eleven questions</h3><p>About your outlet, your systems, your team and your brand. It takes roughly four minutes.</p></li>
-        <li class="step-card reveal"><span class="step-number">02</span><h3>See your result straight away</h3><p>Your score range, seven areas, and weakest point. No waiting around.</p></li>
-        <li class="step-card reveal"><span class="step-number">03</span><h3>Keep a copy by email</h3><p>Your result is already on screen. Request a copy to revisit when you need it.</p></li>
+        <li class="step-card reveal"><span class="step-number">1</span><h3>Answer 11 questions</h3><p>About your outlet, your systems, your team and your brand. Roughly 4 minutes.</p></li>
+        <li class="step-card reveal"><span class="step-number">2</span><h3>See your result straight away</h3><p>Your score range, your 7 areas, and your weakest point. No waiting.</p></li>
+        <li class="step-card reveal"><span class="step-number">3</span><h3>Keep it — a copy by email</h3><p>Your result is on screen the moment you finish, and a copy goes to the email you give us at the start.</p></li>
       </ol>
     </section>
 
     <section class="auditor-band">
       <div class="auditor section-shell">
         <img class="auditor-photo reveal" src="assets/ronak-patel.png" alt="Ronak Patel, standing in an office" loading="lazy">
-        <div class="auditor-copy reveal"><p class="eyebrow">Who conducts your audit</p><h2>Ronak Patel</h2><p class="role">Franchise advisor, Corporate Culture</p>
-          <div class="metrics"><div><strong>₹100+ Cr</strong><span>Investments facilitated</span></div><div><strong>500+</strong><span>Franchise deals</span></div><div><strong>50+</strong><span>Brands scaled</span></div><div><strong>20+</strong><span>Years of expertise</span></div></div>
-          <p class="auditor-bio">Corporate Culture has worked with consumer brands across food, retail, lifestyle, wellness and education, helping them scale with structure and long-term expansion clarity.</p>
+        <div class="auditor-copy reveal">
+          <p class="eyebrow-strong">Who conducts your audit</p>
+          <h2>Ronak Patel</h2>
+          <p class="role">Founder, Corporate Culture</p>
+          <div class="metrics">
+            <div><strong>₹100+ Cr</strong><span>Investments facilitated</span></div>
+            <div><strong>500+</strong><span>Franchise deals</span></div>
+            <div><strong>50+</strong><span>Brands scaled</span></div>
+            <div><strong>20+</strong><span>Years of expertise</span></div>
+          </div>
+          <p class="auditor-bio">Corporate Culture has worked with consumer brands across F&amp;B, retail, lifestyle, wellness and education — helping them scale with structure, funding access and long-term expansion clarity. The 7 areas in this assessment come from those engagements.</p>
         </div>
       </div>
     </section>
 
-    <section class="faq section-shell">
+    <section class="faq section-shell" id="questions">
       <div class="section-heading reveal"><p class="eyebrow">Questions</p><h2>What is a Franchise Readiness Audit?</h2></div>
       <div class="faq-grid">
-        <article class="faq-item reveal"><h3>What is a Franchise Readiness Audit?</h3><p>A structured assessment of whether a business can be franchised successfully. It measures seven areas and includes a separate legal and trademark check.</p></article>
-        <article class="faq-item reveal"><h3>How is my score calculated?</h3><p>Seven areas are weighted by how much they determine franchise success, including whether the numbers work and the operating system can be repeated.</p></article>
-        <article class="faq-item reveal"><h3>Does it cost anything?</h3><p>No. The audit is free, takes around four minutes, and does not require an account or signup.</p></article>
-        <article class="faq-item reveal"><h3>Is the audit legal advice?</h3><p>No. The legal check is an initial snapshot, not legal advice or a substitute for professional counsel.</p></article>
+        <details class="faq-item" open>
+          <summary>What is a Franchise Readiness Audit?</summary>
+          <div class="faq-body"><p>A structured assessment of whether a business can be franchised successfully. It measures 7 areas and produces a score, along with a separate legal and trademark check.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How is my score calculated?</summary>
+          <div class="faq-body"><p>Each of the 7 areas is weighted by how much it determines franchise success. Profit &amp; Payback and Systems carry the most weight, because they are what a franchise owner is actually buying: a model whose numbers work, and a system they can reproduce.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Why is my score a range and not one number?</summary>
+          <div class="faq-body"><p>11 questions can place you closely, not exactly. A range is honest about that. The Franchise Readiness Report asks 44 and gives you one number.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What do the 7 areas measure?</summary>
+          <div class="faq-body">
+            <ul class="area-defs">
+              <li><b>Profit &amp; Payback</b> — whether a franchise owner makes money.</li>
+              <li><b>Systems</b> — whether someone else can run it the way you do.</li>
+              <li><b>Support</b> — whether you can help an owner after they join.</li>
+              <li><b>Your Role</b> — whether the business runs without you.</li>
+              <li><b>Market Proof</b> — whether it works outside your home city.</li>
+              <li><b>Brand Pull</b> — whether people come asking for your franchise.</li>
+              <li><b>Right Partner</b> — whether you know who should run your next outlet.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How long does it take?</summary>
+          <div class="faq-body"><p>About 4 minutes. No signup, no cost.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What happens to my answers?</summary>
+          <div class="faq-body"><p>They are used to produce your result and nothing else. They are never shared with any brand, investor or third party without your permission.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What happens after the free audit?</summary>
+          <div class="faq-body"><p>The free audit stands on its own — you get your result whether or not you go further. If you want your exact score and a written diagnosis of all 7 areas, the Franchise Readiness Report is ₹2,999. If you want a plan you can act on, the Roadmap is ₹9,999 and includes a call with our team. Most people start with the free audit and decide later.</p></div>
+        </details>
       </div>
     </section>
 
     <section class="closing" id="start">
-      <div class="closing-inner section-shell reveal"><p class="eyebrow">Your next step</p><h2>Find out where your business stands.</h2><p>Eleven questions. About four minutes. Free, with no signup.</p><a class="button button-light" href="audit-1.html">Start the audit <span aria-hidden="true">→</span></a></div>
+      <div class="closing-inner section-shell reveal">
+        <div>
+          <h2>Find out where you stand <span>in 4 minutes.</span></h2>
+          <p>11 questions. Free, no signup. Your result is on screen the moment you finish.</p>
+        </div>
+        <div class="closing-actions">
+          <a class="button button-primary" href="audit-1.html">Start the audit <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="text-link" href="#sample-report">See a sample report</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#top" aria-label="Corporate Culture home"><img src="assets/logo-white.png" alt="Corporate Culture"></a><p>© 2026 Corporate Culture. All rights reserved.</p><nav aria-label="Footer"><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#contact">Contact</a></nav></footer>
+  <footer class="site-footer">
+    <div class="section-shell">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Corporate Culture home"><img src="assets/logo-white.png" alt="Corporate Culture"></a>
+          <p>Franchise. Fund. Scale.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Contact</p>
+          <a href="mailto:bd@corpculture.co">bd@corpculture.co</a>
+          <a href="https://wa.me/918072830857">WhatsApp +91 8072 830 857</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Registered address</p>
+          <address>Shivalaya Buildings, 16, Ethiraj Salai<br>Egmore, Chennai, Tamil Nadu 600008</address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <nav aria-label="Legal"><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a><a href="#refunds">Refund Policy</a><a href="#contact">Contact</a></nav>
+        <p>© 2026 Corporate Culture. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>

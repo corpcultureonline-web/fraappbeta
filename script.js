@@ -35,3 +35,20 @@ document.querySelectorAll('a[href="audit-1.html"]').forEach((link) => {
 });
 
 window.addEventListener("pageshow", () => document.body.classList.remove("is-leaving"));
+
+// FAQ: every answer shows on desktop; on phones it is an accordion with the first answer open.
+const faqItems = document.querySelectorAll(".faq-item");
+const phone = window.matchMedia("(max-width: 760px)");
+
+const syncFaq = () => {
+  faqItems.forEach((item, index) => { item.open = phone.matches ? index === 0 : true; });
+};
+
+faqItems.forEach((item) => {
+  item.querySelector("summary").addEventListener("click", (event) => {
+    if (!phone.matches) event.preventDefault();
+  });
+});
+
+syncFaq();
+phone.addEventListener("change", syncFaq);
